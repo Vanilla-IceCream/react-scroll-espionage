@@ -31,7 +31,9 @@
     "prop-types": ">= 15",
     "react": ">= 15 < 17"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@reach/observe-rect": "^1.0.3"
+  },
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
