@@ -1,6 +1,6 @@
 {
   "name": "react-scroll-espionage",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Scrollspy component for React.",
   "main": "dist/react-scroll-espionage.cjs.js",
   "module": "dist/react-scroll-espionage.esm.js",

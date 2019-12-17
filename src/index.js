@@ -5,17 +5,25 @@ import observeRect from '@reach/observe-rect';
 export default class ScrollEspionage extends Component {
   static propTypes = {
     children: PropTypes.node,
-    detectEnd: PropTypes.bool,
+
     nav: PropTypes.func,
-    selector: PropTypes.string.isRequired,
+    selector: PropTypes.string,
     threshold: PropTypes.number,
+
+    // Deprecated
+    detectEnd: PropTypes.bool,
   };
 
   static defaultProps = {
     children: undefined,
-    detectEnd: false,
+
     nav: () => null,
+    selector: '[data-scrollspy]',
     threshold: 0,
+
+    // Deprecated
+    // TODO: set current value
+    detectEnd: false,
   };
 
   // Memoized container height, to prevent unnecessary recalcs

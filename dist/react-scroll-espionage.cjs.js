@@ -375,19 +375,23 @@ function (_Component) {
 
 defineProperty(ScrollEspionage, "propTypes", {
   children: PropTypes.node,
-  detectEnd: PropTypes.bool,
   nav: PropTypes.func,
-  selector: PropTypes.string.isRequired,
-  threshold: PropTypes.number
+  selector: PropTypes.string,
+  threshold: PropTypes.number,
+  // Deprecated
+  detectEnd: PropTypes.bool
 });
 
 defineProperty(ScrollEspionage, "defaultProps", {
   children: undefined,
-  detectEnd: false,
   nav: function nav() {
     return null;
   },
-  threshold: 0
+  selector: '[data-scrollspy]',
+  threshold: 0,
+  // Deprecated
+  // TODO: set current value
+  detectEnd: false
 });
 
 module.exports = ScrollEspionage;
